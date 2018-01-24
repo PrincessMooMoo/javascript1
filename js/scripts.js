@@ -100,3 +100,5 @@ console.log doesn't load until the message is clicked away*/
 //console.log(promptMessage);
 
 /*alert, confirm, and prompt are functions*/
+
+//This is my gh-pages branch
