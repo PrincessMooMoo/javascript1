@@ -78,4 +78,25 @@ console.log(Number);
 console.log(objNumber);
 
 /*Arrays are a collection of values*/
-var fruit = ['apple','banana'];
+var fruit = ['apple','banana']; //declared with squared brackets
+var myArray = ["Hello World", 22, true, {}, null];
+console.log (myArray.length);
+
+var myObject = {
+  myString: "Hello World",
+  magicNumber: 22
+};
+/*objects have to have key object pairs. Separate each object with a comma.
+console.log doesn't load until the message is clicked away*/
+
+//window.alert >> used to get alerts without user feedback
+
+//let alertMessage = alert("Hey, there! My book is only $9.99...");
+
+//let confirmMessage = confirm("Is your name Jesus?");
+/*confirm allows you to obtain information from the user*/
+//let promptMessage = prompt("Tell me the password...","password");
+//used for letting the user imput data. Empty "" is the default into the text box.
+//console.log(promptMessage);
+
+/*alert, confirm, and prompt are functions*/
