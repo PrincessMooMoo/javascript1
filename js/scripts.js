@@ -100,3 +100,110 @@ console.log doesn't load until the message is clicked away*/
 //console.log(promptMessage);
 
 /*alert, confirm, and prompt are functions*/
+
+//Logic Operators
+const bestNumber = 42;
+console.log(!bestNumber);
+/*not >! recognizes that there is something,
+but nothing attached to it. If returns false, then it is truthy, if returns true, then it is falsy
+It is checking if there is not something there "is there something not there?"*/
+
+/*Things either return as Truthy or Falsy. If it exists, then it will return true.
+If doesn't exist, returns false*/
+
+/*falsy things: false, 0, "", */
+
+//console.log(!firstName || !lastName);
+
+//comparison Operators
+var string = "1";
+var number = 1;
+console.log(string == number);//will return true because it is loose. Looking for value.
+console.log(string === number);//will return false because it is strict. It is looking for type and value
+
+// loose not equal !=
+//strict not equal !==
+//two vars with two objects that have the same value cannot be strictly equal to each other
+
+var something = "Something";
+var somethingElse = new String("Something");
+console.log(something == somethingElse);
+console.log(something === somethingElse);
+
+var primitive = "Hello World";
+var stringObject = new String("Hello World");
+console.log(primitive == stringObject);
+console.log(primitive === stringObject);
+console.log(primitive.length);//only changes to an object temporarily just to do it's computation
+console.log(typeof(primitive));
+console.log(typeof(stringObject));
+
+//Arithmetic Operators
+console.log(12-33);
+var number1 = 12;//js assumes you mean a number when you have a number inside quotes
+var number2 = 780;
+console.log(number1*number2);
+
+//modulo(%) gives you the remainder
+
+console.log(number1 % number2);
+console.log(780%12); //comes back as 0. There is no remainder. It divides evenly
+//js will come back as NaN if you try to declare a value that is not a number
+NaN === NaN //comes back false because they are objects
+
+//Assignment Operators
+number1 += 12;
+console.log(number1);
+
+number1 = new Number(number1);
+number2 = new Number(number2);
+number1 = parseInt(10);
+number2 = parseInt(10);
+console.log(number1 + number2);
+
+//console flow
+//if/else
+//const bestMovie = 'string';
+/*if(typeof(bestMovie) ==='string') {
+  alert('Yay its a string');
+  }
+
+else if(typeof(bestMovie) === 'number') {
+  alert('You gave me a number');
+  }
+
+  else {
+  alert("It's not a string or a number");
+}//do not need a semicolon at the end of an if/else statement*/
+
+//switch statement: used for many many conditions
+/*switch(typeof(bestMovie)) {
+
+  case 'string'://use colon in switch statement
+    alert("Yay it's a string");
+    break;//like the end curly brace.
+
+  case 'number':
+    alert("Yay it's a number");
+    break;
+
+  case 'boolean':
+    alert("Yay it's true");
+    break;
+
+  case 'object':
+    alert("Yay it's an object");
+    break;
+
+  default:
+    alert("it's an array");//the array will be changed into an object because array is not a primitive. Anything that is not a primitive is automatically an object.
+    break;//add default at the end of the switch statement
+}
+*/
+//Ternaries (do not nest them). Best time to use it is when you have a simple true/false statement.
+
+const bestMovie = [];
+bestMovie !== undefined ? alert('it exists!') : alert('It doesn\'t exist!');
+//only put ; at the very end of the ternarie
+
+//edge casing: check to see if a person can incorrectly imput something such as a number when it was supposed to be a string.
