@@ -57,52 +57,52 @@ var colorOptions = ["red", "orange", "yellow", "blue", "green", "pink", "purple"
 
 switch (favColor) {
   case "red":
-    alert("Red is the color of passion " + userName + ".")
+    alert("Red is the color of passion " + userName + ".");
     break;
 
   case "orange":
   case "Orange":
-    alert(userName + " must like eating oranges.")
+    alert(userName + " must like eating oranges.");
     break;
 
   case "yellow":
   case "Yellow":
-    alert("You must be a cherry person, " + userName + ".")
+    alert("You must be a cherry person, " + userName + ".");
     break;
 
   case "blue":
   case "Blue":
-    alert("Blue is the sky on a nice, clear day " + userName + ".")
+    alert("Blue is the sky on a nice, clear day " + userName + ".");
     break;
 
   case "green":
   case "Green":
-    alert(userName + " is on the green team.")
+    alert(userName + " is on the green team.");
     break;
 
   case "pink":
   case "Pink":
-    alert(userName + ", that is my favorite color!")
+    alert(userName + ", that is my favorite color!");
     break;
 
   case "purple":
   case "Purple":
-    alert(userName + ", I am not a fan of purple.")
+    alert(userName + ", I am not a fan of purple.");
     break;
 
   case "white":
   case "White":
-    alert("White is the absence of color, " + userName)
+    alert("White is the absence of color, " + userName);
     break;
 
   case "black":
   case "Black":
-    alert("I feel the goth flowing through your veins, " + userName)
+    alert("I feel the goth flowing through your veins, " + userName);
     break;
 
   case "gray":
   case "Gray":
-    alert("I am so sad " + userName)
+    alert("I am so sad " + userName);
     break;
 
     default:
