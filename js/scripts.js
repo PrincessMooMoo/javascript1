@@ -47,45 +47,45 @@ console.log(firstNumber*secondNumber);
   1. var can be declared and defined on one or two lines
   2. var declarations are hoisted, but not definitions. Can go outside of scope
   3. you can redefine var */
-/*pointers point to a spot in memory*/
-/*let does not get hoisted. This is so that you don't accidently replace the
- first variable with the same variable name,but with different definition. You get an undeclared.
- You can use one line or two. Does not leave it's scope
-*/
-let thirdNumber = 22;
-console.log(thirdNumber);
-/*if you do secondNumber = 12, the code will revert to var.*/
-
-const truth = 'Ep. 8 was alright';
-console.log (truth);
-/*const doesn't get hoisted. You cannot redefine const in the same block. You can redefine in a different block*/
-
-//There are many types of objects. Methods. Operations
-//new is a keyword in js that cannot be changed. It is a reserved term. Don't use new in your naming
-let rightNow = new Date();
-console.log(rightNow);
-
-var iLikePi = Math.PI;
-console.log(iLikePi);
-
-var newString = new String("lalallaa");
-console.log(newString , String);
-
-var number = 6;
-var objNumber = new Number(6);
-
-console.log(Number);
-console.log(objNumber);
-
-/*Arrays are a collection of values*/
-var fruit = ['apple','banana']; //declared with squared brackets
-var myArray = ["Hello World", 22, true, {}, null];
-console.log (myArray.length);
-
-var myObject = {
-  myString: "Hello World",
-  magicNumber: 22
-};
+// /*pointers point to a spot in memory*/
+// /*let does not get hoisted. This is so that you don't accidently replace the
+//  first variable with the same variable name,but with different definition. You get an undeclared.
+//  You can use one line or two. Does not leave it's scope
+// */
+// let thirdNumber = 22;
+// console.log(thirdNumber);
+// /*if you do secondNumber = 12, the code will revert to var.*/
+//
+// const truth = 'Ep. 8 was alright';
+// console.log (truth);
+// /*const doesn't get hoisted. You cannot redefine const in the same block. You can redefine in a different block*/
+//
+// //There are many types of objects. Methods. Operations
+// //new is a keyword in js that cannot be changed. It is a reserved term. Don't use new in your naming
+// let rightNow = new Date();
+// console.log(rightNow);
+//
+// var iLikePi = Math.PI;
+// console.log(iLikePi);
+//
+// var newString = new String("lalallaa");
+// console.log(newString , String);
+//
+// var number = 6;
+// var objNumber = new Number(6);
+//
+// console.log(Number);
+// console.log(objNumber);
+//
+// /*Arrays are a collection of values*/
+// var fruit = ['apple','banana']; //declared with squared brackets
+// var myArray = ["Hello World", 22, true, {}, null];
+// console.log (myArray.length);
+//
+// var myObject = {
+//   myString: "Hello World",
+//   magicNumber: 22
+// };
 /*objects have to have key object pairs. Separate each object with a comma.
 console.log doesn't load until the message is clicked away*/
 
@@ -102,3 +102,63 @@ console.log doesn't load until the message is clicked away*/
 /*alert, confirm, and prompt are functions*/
 
 //This is my gh-pages branch
+
+
+var userName = prompt("What is your name?", "My name is...");
+var favColor = prompt("What is your favorite color?", "My favorite color is...");
+
+var colorOptions = ["red", "orange", "yellow", "blue", "green", "pink", "purple", "white", "black", "gray"];
+
+switch (favColor) {
+  case "red":
+    alert("Red is the color of passion " + userName + ".");
+    break;
+
+  case "orange":
+  case "Orange":
+    alert(userName + " must like eating oranges.");
+    break;
+
+  case "yellow":
+  case "Yellow":
+    alert("You must be a cherry person, " + userName + ".");
+    break;
+
+  case "blue":
+  case "Blue":
+    alert("Blue is the sky on a nice, clear day " + userName + ".");
+    break;
+
+  case "green":
+  case "Green":
+    alert(userName + " is on the green team.");
+    break;
+
+  case "pink":
+  case "Pink":
+    alert(userName + ", that is my favorite color!");
+    break;
+
+  case "purple":
+  case "Purple":
+    alert(userName + ", I am not a fan of purple.");
+    break;
+
+  case "white":
+  case "White":
+    alert("White is the absence of color, " + userName);
+    break;
+
+  case "black":
+  case "Black":
+    alert("I feel the goth flowing through your veins, " + userName);
+    break;
+
+  case "gray":
+  case "Gray":
+    alert("I am so sad " + userName);
+    break;
+
+    default:
+    alert("You must be a multi-colored unicorn " + userName);
+}
