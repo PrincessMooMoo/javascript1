@@ -13,14 +13,105 @@ console.log() everything that is inside the () is called an argument. Things tha
 //   console.log('You fired your anonymous function');
 // };
 
-//anonymous fn that takes 2 args and is assigned to a var
-var userLogin = function(username, password) {
-
-};
+// //anonymous fn that takes 2 args and is assigned to a var
+// var userLogin = function(username, password) {
+//
+// };
 
 //named function that takes 2 arguments
-function myMagicFunction(argument1, argument2) {
-  console.log(`${argument1} is better than ${argument2}`);
-};
+// function myMagicFunction(argument1, argument2) {
+//   console.log(`${argument1} is better than ${argument2}`);
+// };
+//
+// myMagicFunction("Star Wars", "Star Trek"); //you defined them when you call them
 
-myMagicFunction("Star Wars", "Star Trek"); //you defined them when you call them
+//functions can be declaration or epression. Difference is that hoisting only works for a function declaration.
+
+// //function expression:
+// var logStuff = function(param) {
+//   console.log{`${param} was passed in`);
+// };
+//
+// //fuction declaration:
+// function multiply (num, secondNum) {
+//   return num * secondNum;
+// };
+
+//scoping/closure: variables declared inside can't be seen outside, but inside can access all variables declared in the same/parent scopes.
+
+
+// function callMyself(number) {
+//   if(number >= 0) {
+//     number--;
+//   } else {
+//     callMyself(number);
+//   } else {
+//     return
+//   }
+// }
+
+//arrow functions. ES6. are annonymous
+
+//does not have the function keyword. Instead, it's a fat arrow =>
+// (param1, param2, param3, ..., paramN) => { statements }
+//(param1, param2, param3, ..., paramN) => expression (only use this for one thing. An alert or return)
+//singleParam => { statements }
+//
+// (number) => {
+//   if(number >= 0){
+//     number--;
+//     console.log(number);
+//   } else {
+//     return //similar to break. Stops the function and goes back out of the scope. parent or global scope.
+//   }
+// }
+//
+// function givesMeBestNumber(number) {
+//   if(number === 42) {
+//     return `${number} is the best number!`;
+//   } else {
+//     alert(`${number} sucks!`);
+//   }
+// }
+// let message = givesMeBestNumber(42); //the varliable is calling this function.
+// alert(message);
+//
+// alert(givesMeBestNumber(42));
+
+// const dogAge = prompt("How old is that dog?", 3);
+//
+// function calcDogYears(age) {
+//   parseInt(age);
+//   if(isNaN(age)) {
+//     //if the user gives me a non-number...
+//     calcDogYears(prompt('Please give a NUMBER', '10'));
+//   } else {
+//     alert(age *= 7);
+//   }
+// }
+// calcDogYears(dogAge);
+//
+// //method vs. functions
+// //functions must be called. Must have a value in the parenthesis
+// //methods can have the parenthesis empty. Attached to objects with a .
+//
+// var myString = "lalalala";
+// myString.toUpperCase();
+
+const humanAge = prompt('How old are you?', 18);
+const product = prompt('How much product do you use per day?', 1);
+
+function lifeSupply(age , productPerDay) {
+  parseInt(age);
+  if(isNaN(age)) {
+    lifeSupply(prompt('Please give a NUMBER for your age', "18"));
+  } else {
+    parseInt(productPerDay);
+    if(isNaN(productPerDay)) {
+      lifeSupply(prompt('Please give a NUMBER for the amount of product used per day', "1"));
+    }
+    alert(humanAge * product * 365);
+  }
+}
+
+lifeSupply(humanAge, product);
