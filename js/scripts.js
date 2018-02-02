@@ -163,17 +163,17 @@ movieYears.push(myFavoriteMovies[0][1], myFavoriteMovies[1][1],myFavoriteMovies[
 alert(movieYears); The first index number is the first item of the array, second number is the second item in the array of the array.
 */
 
-var favoriteMovie1 = ['Pirates of the Carribean', 'Jack Sparrow'];
-var favoriteMovie2 = ['Lord of the Rings', 'Frodo Baggins'];
-var favoriteMovie3 = ['King Kong', 'King Kong'];
-var favoriteMovie4 = ['Guardians of the Galaxy', 'Starlord'];
-var favoriteMovie5 = ['Django Unchained', 'Django'];
-var myFavoriteMovies = [];
-myFavoriteMovies.push(favoriteMovie1, favoriteMovie2, favoriteMovie3, favoriteMovie4, favoriteMovie5);
-console.log(myFavoriteMovies);
-var favMovieTitles = [];
-favMovieTitles.push(myFavoriteMovies[4][0], myFavoriteMovies[2][0], myFavoriteMovies[0][0], myFavoriteMovies[1][0], myFavoriteMovies[3][0]);
-alert(favMovieTitles);
+// var favoriteMovie1 = ['Pirates of the Carribean', 'Jack Sparrow'];
+// var favoriteMovie2 = ['Lord of the Rings', 'Frodo Baggins'];
+// var favoriteMovie3 = ['King Kong', 'King Kong'];
+// var favoriteMovie4 = ['Guardians of the Galaxy', 'Starlord'];
+// var favoriteMovie5 = ['Django Unchained', 'Django'];
+// var myFavoriteMovies = [];
+// myFavoriteMovies.push(favoriteMovie1, favoriteMovie2, favoriteMovie3, favoriteMovie4, favoriteMovie5);
+// console.log(myFavoriteMovies);
+// var favMovieTitles = [];
+// favMovieTitles.push(myFavoriteMovies[4][0], myFavoriteMovies[2][0], myFavoriteMovies[0][0], myFavoriteMovies[1][0], myFavoriteMovies[3][0]);
+// alert(favMovieTitles);
 
 /*-------------------------------------------------------------------------
 loops
@@ -218,9 +218,9 @@ console.log(result);
 //   console.log(favMovies[i]);
 // } while (i < favMovies.length);
 
-
-for(let i = 0; i < myFavoriteMovies.length; i++) {
-  if (myFavoriteMovies[i][0] === "Lord of the Rings") {
-  alert(`${myFavoriteMovies[i][0]} is my favorite movie with ${myFavoriteMovies[i][1]}.`);
-  }
-}
+//
+// for(let i = 0; i < myFavoriteMovies.length; i++) {
+//   if (myFavoriteMovies[i][0] === "Lord of the Rings") {
+//   alert(`${myFavoriteMovies[i][0]} is my favorite movie with ${myFavoriteMovies[i][1]}.`);
+//   }
+// }
