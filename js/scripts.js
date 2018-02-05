@@ -94,24 +94,90 @@ console.log() everything that is inside the () is called an argument. Things tha
 // //method vs. functions
 // //functions must be called. Must have a value in the parenthesis
 // //methods can have the parenthesis empty. Attached to objects with a .
+// //
+// // var myString = "lalalala";
+// // myString.toUpperCase();
 //
-// var myString = "lalalala";
-// myString.toUpperCase();
+// const humanAge = prompt('How old are you?', 18);
+// const product = prompt('How much product do you use per day?', 1);
+//
+// function lifeSupply(age , productPerDay) {
+//   parseInt(age);
+//   if(isNaN(age)) {
+//     lifeSupply(prompt('Please give a NUMBER for your age', "18"));
+//   } else {
+//     parseInt(productPerDay);
+//     if(isNaN(productPerDay)) {
+//       lifeSupply(prompt('Please give a NUMBER for the amount of product used per day', "1"));
+//     }
+//     alert(humanAge * product * 365);
+//   }
+// }
+//
+// lifeSupply(humanAge, product);
 
-const humanAge = prompt('How old are you?', 18);
-const product = prompt('How much product do you use per day?', 1);
+// fuction calcLifetimeSupply(age, perDay) {
+//   return (80 - age * (365 * perDay);
+//   let testArr = [age, perDay];
+//   if(testForInts(testArr)) {
+//     var lifeTime = (80 - age) * (365 * perDay);
+//     alert(`you will need ${lifeTime} ${supplyOf} to last until you're 80.`);
+//   } else {
+//     var age = prompt('How old are you?');
+//     var daily = prompt('How much o you use per day?');
+//     lifeTime = calcLifetimeSupply(age, daily);
+//   }
+// }
+//
+// var supplyOf = prompt('What do you want a lifetime supply of?', "hamburgers");
+// var age = prompt("How old are you?");
+// var daily = prompt("How much do you use per day?");
+// var lifeTime;
+// alert
 
-function lifeSupply(age , productPerDay) {
-  parseInt(age);
-  if(isNaN(age)) {
-    lifeSupply(prompt('Please give a NUMBER for your age', "18"));
-  } else {
-    parseInt(productPerDay);
-    if(isNaN(productPerDay)) {
-      lifeSupply(prompt('Please give a NUMBER for the amount of product used per day', "1"));
+//
+// var age = prompt("How old are you?");
+// var perDay = prompt("How much of your favorite product do you use per day?");
+//
+// function calcLifetimeSupply(humanAge, product){
+//   var death = 80 - humanAge;
+//   var lifetimeSupply = death * product * 365;
+//   alert(`You will need ${lifetimeSupply} to last you for ${death} years.`);
+// }
+//
+// calcLifetimeSupply(age, perDay);
+
+function calcNumber(){
+  var num = prompt('Enter a number you like for the base');
+  var power = prompt('Enter a number you hate for the power');
+
+
+  switch (true) {
+      case (!isNaN(parseInt(num)) && !isNaN(parseInt(power))):
+      alert(Math.pow(parseInt(num), parseInt(power)));
+      break;
+
+      case (isNaN(parseInt(num)) && !isNaN(parseInt(power))):
+      num = prompt("Hey! Please enter a number for the base");
+      alert(Math.pow(parseInt(num), parseInt(power)));
+      break;
+
+      case (!isNaN(parseInt(num)) && isNaN(parseInt(power))):
+      power = prompt("Yo! Please enter a number for the power");
+      alert(Math.pow(parseInt(num), parseInt(power)));
+      break;
+
+      default:
+      alert("We are going to try this again from the beginning ok?");
+      num = prompt("Hey! Please enter a number for the base");
+      power = prompt("Yo! Please enter a number for the power");
+        alert(Math.pow(parseInt(num), parseInt(power)));
     }
-    alert(humanAge * product * 365);
   }
-}
 
-lifeSupply(humanAge, product);
+// calcNumber();
+
+let aString = 'alex';
+let capName = aString.charAt(0).toUpperCase() + aString.slice(1);
+capName += ".";
+console.log(capName);
