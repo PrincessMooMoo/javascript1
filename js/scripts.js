@@ -147,12 +147,13 @@ console.log() everything that is inside the () is called an argument. Things tha
 //
 // calcLifetimeSupply(age, perDay);
 
-function calcNumber(){
-  var num = prompt('Enter a number you like for the base');
-  var power = prompt('Enter a number you hate for the power');
+// var num = prompt('Enter a number you like for the base');
+// var power = prompt('Enter a number you hate for the power');
+// function calcNumber(){
 
 
-  switch (true) {
+
+  // switch (true) {
       case (!isNaN(parseInt(num)) && !isNaN(parseInt(power))):
       alert(Math.pow(parseInt(num), parseInt(power)));
       break;
@@ -174,10 +175,40 @@ function calcNumber(){
         alert(Math.pow(parseInt(num), parseInt(power)));
     }
   }
-
+// calcNumber(num, power);
 // calcNumber();
 
 let aString = 'alex';
 let capName = aString.charAt(0).toUpperCase() + aString.slice(1);
 capName += ".";
 console.log(capName);
+//console.log(Math.pow(n, 2));
+//return Math.pow(n,2);
+
+//s = s.toString();
+// //if(s.charAt(s.length -1) === ".") {
+//   console.log(newStr);
+// }else {
+//   newStr += '.';
+//   }
+// }
+
+// takeAString(stringy);
+// function flipHaves(a) {
+//     var index = Math.round(a.length / 2); represents the middle index of the string
+//     return a.substring(index) + a.slice(0, index);
+// } substring takes index to the end of the string
+
+// var report = flipHalves(stringy); //using a var to store a function
+// console.log(report);
+
+function isPalindrome(s) {
+  var reversed = s.split('').reverse().join('');//slipt makes evert letter in the string in an array
+  if(s === reversed) {//Join makes the arrays back into a string
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isPalindrome(stringy));
